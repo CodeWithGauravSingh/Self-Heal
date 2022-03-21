@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Physical</title><link rel="icon" href="iconpng.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Lato", sans-serif;
+        }
+
+        .w3-bar,
+        h1,
+        button {
+            font-family: "Montserrat", sans-serif;
+        }
+
+        a {
+            color: #079bf2;
+        }
+
+        a:hover {
+            color: #ff0000;
+        }
+
+
+        #title {
+            font-size: 70px;
+            font-weight: 700;
+        }
+
+        #btun {
+            background-color: transparent;
+            color: white;
+            border-color: black;
+        }
+
+        /* The subnavigation menu */
+        .subnav {
+            float: left;
+            overflow: hidden;
+        }
+
+        /* Style the subnav content - positioned absolute */
+        .subnav-content {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 50px;
+            background-color: white;
+            width: 100%;
+
+        }
+
+        /* Style the subnav links */
+        .subnav-content a {
+            float: left;
+            text-decoration: none;
+        }
+
+
+        /* When you move the mouse over the subnav container, open the subnav content */
+        .subnav:hover .subnav-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-card w3-left-align w3-large" style="background-color: #079bf2">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
+                href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                    class="fa fa-bars"></i></a>
+            <a href="homepage.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
+            <a href="selfcare.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Self
+                Care</a>
+
+            <!-- <a href="physical.html" class="w3-bar-item w3-button w3-padding-large" style="background-color: #13a56c; color: white;">Physical</a>
+            <a href="mental.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Mental</a> -->
+            <div class="subnav">
+                <span style="background-color: #13a56c; color: white;">
+                <div class="subnavbtn w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Physical <i
+                        class="fa fa-caret-down"></i></div></span>
+                <div class="subnav-content w3-padding-large w3-hover-white">
+                    <a href="physical.html">Exercise</a><br><br>
+                    <a href="physical_diet.html">Diet</a>
+                </div>
+            </div>
+            <div class="subnav">
+                <div class="subnavbtn w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Mental <i
+                        class="fa fa-caret-down"></i></div>
+                <div class="subnav-content w3-padding-large w3-hover-white">
+                    <a href="mental.html">Relaxation</a><br><br>
+                    <a href="mental_sleep.html">Sleep Hygiene</a>
+                </div>
+            </div>
+            <a href="social.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Social</a>
+            <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 4</a> -->
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="w3-center" style="padding:50px 10px">
+        <div class="cover" style="min-height: 500px; text-align: center; background-color: #13a56c;">
+            <img src="https://cdn.dribbble.com/users/108637/screenshots/2941443/taska_ae_1.gif"
+                style="float: right; height: 400px; width: 500px; transform: translate(-100px,50px);">
+            <div class="overlaytext" style="float: left; transform: translate(50px,160px);">
+                <h1 class="w3-margin" style="color: white;"><span id="title"
+                        style="font-size: 60px; font-weight: 600;">Diet</span></h1>
+            </div>
+        </div>
+    </header>
+    <!-- First Grid -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-twothird">
+                <h1 style="font-size: 45px;">Food Myths & Facts</h1>
+                <h5 class="w3-padding-32" style="font-size: 26px;">You should know these amazing facts about food and
+                    some common myths about healthy eating.<br>
+                    <a href="https://www.eatfirst.com/en-gb/c/blog/fun-facts-about-food" style="text-decoration: none;">
+                        Read More &#8594;</a>
+                </h5>
+            </div>
+
+            <div class="w3-third w3-center">
+                <iframe width="500" height="400" src="https://youtube.com/embed/p1dnHmGimgo" frameborder="0"
+                    allowfullscreen ng-show="showvideo" style="padding-top: 15px;"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Grid -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div>
+            <div class="w3-third w3-center" style="padding-left: 50px;">
+                <iframe width="500" height="400" src="https://youtube.com/embed/NqV1Ig4_nfI" frameborder="0"
+                    allowfullscreen ng-show="showvideo" style="padding-top: 15px;"></iframe>
+            </div>
+            <div class="w3-twothird" style="padding-right: 100px; padding-left: 100px;">
+                <h1 style="font-size: 45px;">Importance of Balanced Diet</h1>
+                <h5 class="w3-padding-32" style="font-size: 26px;">What exactly is a balanced diet? In simple words,
+                    it's a diet that offers the nutrients to help your body function properly. The importance of diet
+                    lies in the intake of the right amount of calories. <br>
+                    <a href="https://www.narayanahealth.org/blog/importance-of-balanced-diet-for-a-healthy-lifestyle/"
+                        style="text-decoration: none;">Read More &#8594;</a>
+                </h5>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Third blog -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-twothird">
+                <h1 style="font-size: 45px;">Creating a Healthy Plate</h1>
+                <h5 class="w3-padding-32" style="font-size: 26px; padding-right: 20px;">A healthy plate supplies the
+                    nutrients your body
+                    needs to work effectively. Your body gets the right nutrition when you consume a wide variety of
+                    food rich in calories such as fresh fruits and vegetables, whole grains, and proteins.<br>
+                    <a href="https://www.hsph.harvard.edu/nutritionsource/healthy-eating-plate/"
+                        style="text-decoration: none;">Read More &#8594;</a>
+                </h5>
+            </div>
+
+            <div class="w3-third w3-center">
+                <iframe width="500" height="400" src="https://youtube.com/embed/Gmh_xMMJ2Pw" frameborder="0"
+                    allowfullscreen ng-show="showvideo" style="padding-top: 15px;"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fourth Grid -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div>
+            <div class="w3-third w3-center" style="padding-left: 50px;">
+                <iframe width="500" height="400" src="https://youtube.com/embed/XMcab1MFaLc" frameborder="0"
+                    allowfullscreen ng-show="showvideo" style="padding-top: 15px;"></iframe>
+            </div>
+            <div class="w3-twothird" style="padding-right: 100px; padding-left: 100px;">
+                <h1 style="font-size: 45px;">Importance of Balanced Diet</h1>
+                <h5 class="w3-padding-32" style="font-size: 26px;">
+                    &#128204;“You are what you eat, so don't be fast, cheap, easy, or fake” – Unknown
+                    <br> &#128204; “If you keep good food in your fridge, you will eat good food” – Errick McAdams
+                    <br> &#128204;“By choosing healthy over skinny you are choosing self-love over self-judgement” –
+                    Steve Maraboli
+
+                </h5>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Fifth blog -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-twothird">
+                <h1 style="font-size: 45px;">Healthy eating tips:</h1>
+                <h5 class="w3-padding-32" style="font-size: 26px; padding-right: 20px;">
+                    &#127917; Choose good carbs, not no carbs. Whole grains are your best bet.
+                    <br>&#127917; Pay attention to the protein package. Fish, poultry, nuts, and beans are the best
+                    choices.
+                    <br>&#127917; Choose foods with healthy fats, limit foods high in saturated fat, and avoid foods
+                    with trans fat. Plant oils, nuts, and fish are the healthiest sources
+                    <br>&#127917; Choose a fiber-filled diet, rich in whole grains, vegetables, and fruits
+                    <br>&#127917; Eat more vegetables and fruits. Go for color and variety—dark green, yellow, orange,
+                    and red<br>
+
+                    <a href="https://www.hsph.harvard.edu/nutritionsource/2013/11/06/healthy-eating-ten-nutrition-tips-for-eating-right/"
+                        style="text-decoration: none;">Read More &#8594;</a>
+                </h5>
+            </div>
+
+            <div class="w3-third w3-center">
+                <iframe width="500" height="400" src="https://youtube.com/embed/jwWpTAXu-Sg" frameborder="0"
+                    allowfullscreen ng-show="showvideo" style="padding-top: 15px;"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+        <h1 class="w3-margin w3-xlarge"><a href="https://www.agegracefullyamerica.com/category/healthy-eating/"
+                style="text-decoration: none; font-size: 45px;">Explore More</a></h1>
+    </div>
+
+
+    <!-- About Us -->
+    <div class="w3-container" id="contact"
+        style="margin-top:75px; padding-top: 30px; background-color: rgb(90, 89, 89);">
+        <div class="w3-row-padding w3-grayscale">
+            <div class="w3-col m4 w3-margin-bottom">
+                <div class="w3-light-grey">
+                    <div class="w3-container" style="color: white; background-color: rgb(90, 89, 89);">
+                        <h3>About Us</h3>
+                        <p class="w3-opacity">Indian Institute Of Information Technology, Allahabad<br>Road Devghat,
+                            Jhalwa, Prayagraj<br>Uttar Pradesh (211015)</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col m4 w3-margin-bottom">
+                <div class="w3-light-grey">
+                    <div class="w3-container" style="color: white; background-color: rgb(90, 89, 89);">
+                        <h3>Contribute</h3>
+                        <p class="w3-opacity"><i
+                                class="fa fa-envelope w3-hover-opacity"></i>&nbsp;tap2gauravsingh@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col m4 w3-margin-bottom">
+                <div class="w3-light-grey">
+                    <div class="w3-container" style="color: white; background-color: rgb(90, 89, 89);">
+                        <h3>Social</h3>
+                        <div class="w3-xlarge w3-padding-32">
+
+                            <a id="btun" href="https://www.facebook.com/profile.php?id=100073353016321"><i
+                                    class="fa fa-facebook-official w3-hover-opacity "></i></a> &nbsp;
+                            <a id="btun" href="https://www.instagram.com/gauravsingh._._._/"><i
+                                    class="fa fa-instagram w3-hover-opacity "></i></a> &nbsp;
+                            <a id="btun" href="https://twitter.com/GauravS00997828"><i
+                                    class="fa fa-twitter w3-hover-opacity "></i></a> &nbsp;
+                            <a id="btun" href="https://in.pinterest.com/tap2gauravsingh/_saved/"><i
+                                    class="fa fa-pinterest w3-hover-opacity "></i></a> &nbsp;
+                            <a id="btun" href="https://www.linkedin.com/in/codewithgauravsingh/"><i
+                                    class="fa fa-linkedin w3-hover-opacity "></i></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

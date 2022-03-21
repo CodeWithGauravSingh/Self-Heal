@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Physical</title><link rel="icon" href="iconpng.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Lato", sans-serif;
+        }
+
+        .w3-bar,
+        h1,
+        button {
+            font-family: "Montserrat", sans-serif;
+        }
+
+        a{
+      color: #079bf2;
+    }
+    a:hover {
+      color: #ff0000;
+    }
+
+        .overlaytext {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #title {
+            font-size: 70px;
+            font-weight: 700;
+            border: black;
+            border-width: 2px;
+        }
+        #btun{
+      background-color: transparent;
+      color: white;
+      border-color: black;
+    }
+
+    /* The subnavigation menu */
+    .subnav {
+      float: left;
+      overflow: hidden;
+    }
+
+    /* Style the subnav content - positioned absolute */
+    .subnav-content {
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 50px;
+      background-color: white;
+      width: 100%;
+
+    }
+
+    /* Style the subnav links */
+    .subnav-content a {
+      float: left;
+      text-decoration: none;
+    }
+
+
+    /* When you move the mouse over the subnav container, open the subnav content */
+    .subnav:hover .subnav-content {
+      display: block;
+    }
+    </style>
+</head>
+
+<body >
+
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-card w3-left-align w3-large" style="background-color: #079bf2">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
+                href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                    class="fa fa-bars"></i></a>
+            <a href="homepage.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
+            <a href="selfcare.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Self Care</a>
+            <!-- <a href="physical.html" class="w3-bar-item w3-button w3-padding-large " style="background-color: rgb(31, 29, 29); color: white;">Physical</a>
+            <a href="mental.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Mental</a> -->
+            <div class="subnav">
+                <span style="background-color: rgb(31, 29, 29); color: white;">
+                <div class="subnavbtn w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Physical <i
+                    class="fa fa-caret-down"></i></div></span>
+                <div class="subnav-content w3-padding-large w3-hover-white">
+                  <a href="physical.html">Exercise</a><br><br>
+                  <a href="physical_diet.html">Diet</a>
+                </div>
+              </div>
+              <div class="subnav">
+                <div class="subnavbtn w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Mental <i
+                    class="fa fa-caret-down"></i></div>
+                <div class="subnav-content w3-padding-large w3-hover-white">
+                  <a href="mental.html">Relaxation</a><br><br>
+                  <a href="mental_sleep.html">Sleep Hygiene</a>
+                </div>
+              </div>
+            <a href="social.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Social</a>
+            <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 4</a> -->
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="w3-container w3-center" style="padding:50px 10px">
+        <div class="cover" style="position: relative; text-align: center;">
+            <img src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_1519,c_limit/c13c2695-e894-4ab1-a11e-3dc2308fe56c/nike-training-club-app-home-workouts-more.jpg"
+                style="width: 100%;">
+            <div class="overlaytext">
+                <h1 class="w3-margin" style="color: white; text-shadow: 2px 2px 3px black;"><span id="title">Exercise</span></h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- First Grid -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-twothird">
+                <h1 style="font-size: 45px;">Yoga</h1>
+                <h5 class="w3-padding-32" style="font-size: 26px;">Deepen your practice through traditional yoga. Add
+                    yoga to your routine to improve your strength, stability and flexibility. <br>
+                    <a href="https://www.health.harvard.edu/staying-healthy/the-physical-benefits-of-yoga"
+                        style="text-decoration: none;">Read More &#8594;</a>
+                </h5>
+            </div>
+
+            <div class="w3-third w3-center">
+                <img src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_467,c_limit/eed89cc3-bfb3-4499-a7de-4c3011b33a39/nike-training-club-app-home-workouts-more.jpg"
+                    style="height: 350px; width: 300px;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Grid -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-third w3-center" style="padding-right: 20px;">
+                <img src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_467,c_limit/9a799228-30ae-411b-95dc-5c625b67d97e/nike-training-club-app-home-workouts-more.jpg"
+                    style="height: 350px; width: 300px;">
+            </div>
+            <div class="w3-twothird">
+                <h1 style="font-size: 45px;">Cardio and HIIT</h1>
+                <h5 class="w3-padding-32" style="font-size: 26px;">Build your full body endurance with high-intensity
+                    training drills, kickboxing and more. 15 min full body workout. <br>
+                    <a href="https://www.nbcnews.com/better/lifestyle/15-minute-full-body-hiit-workout-no-equipment-required-ncna977711"
+                        style="text-decoration: none;">Read More &#8594;</a>
+                </h5>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Third blog -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-twothird">
+                <h1 style="font-size: 45px;">Strength Training</h1>
+                <h5 class="w3-padding-32" style="font-size: 24px;">Strength training — also known as weight or
+                    resistance training — is physical activity designed to improve muscular strength and fitness by
+                    exercising a specific muscle or muscle group against external resistance, including free-weights,
+                    weight machines, or your own body weight. <br>
+                    <a href="https://www.everydayhealth.com/fitness/add-strength-training-to-your-workout.aspx"
+                        style="text-decoration: none;">Read More &#8594;</a>
+                </h5>
+            </div>
+
+            <div class="w3-third w3-center">
+                <img src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_467,c_limit/28aca81b-2c57-4a08-ab33-59a755fe348f/nike-training-club-app-home-workouts-more.jpg"
+                    style="height: 350px; width: 300px;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Fourth blog -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-third w3-center" style="padding-right: 20px;">
+                <img src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_467,c_limit/5a6a6c2b-8303-4547-a4e2-862537d39566/nike-training-club-app-home-workouts-more.jpg"
+                    style="height: 350px; width: 300px;">
+            </div>
+            <div class="w3-twothird">
+                <h1 style="font-size: 45px;">Mobility</h1>
+                <h5 class="w3-padding-32" style="font-size: 24px;">It may be a new buzzword in many fitness circles, but
+                    mobility is far from a fad. Mobility refers to how well you can move, and how freely and
+                    efficiently. <br>
+                    <a href="https://www.osrpt.com/2018/03/yes-mobility-matters/#:~:text=In%20essence%2C%20mobility%20refers%20to,of%20motion%2C%20and%20endurance%20capacity."
+                        style="text-decoration: none;">Read More &#8594;</a>
+                </h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fifth blog -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-twothird">
+                <h1 style="font-size: 40px;">Simple Routine for Better Run</h1>
+                <h5 class="w3-padding-32" style="font-size: 26px;">Quick workouts to warm up before or cool down after
+                    your run. <br>
+                    <a href="https://kidshealth.org/en/teens/easy-exercises.html" style="text-decoration: none;">Read More
+                        &#8594;</a>
+                </h5>
+            </div>
+
+            <div class="w3-third w3-center">
+                <img src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_467,c_limit/9b491b38-ea9c-430c-a7d2-5e5639026e46/nike-training-club-app-home-workouts-more.jpg"
+                    style="height: 350px; width: 300px;">
+            </div>
+        </div>
+    </div>
+
+   <!-- About Us -->
+   <div class="w3-container" id="contact"
+   style="margin-top:75px; padding-top: 30px; background-color: rgb(90, 89, 89);">
+   <div class="w3-row-padding w3-grayscale">
+     <div class="w3-col m4 w3-margin-bottom">
+       <div class="w3-light-grey">
+         <div class="w3-container" style="color: white; background-color: rgb(90, 89, 89);">
+           <h3>About Us</h3>
+           <p class="w3-opacity" >Indian Institute Of Information Technology, Allahabad<br>Road Devghat, Jhalwa, Prayagraj<br>Uttar Pradesh (211015)</p>
+           
+         </div>
+       </div>
+     </div>
+     <div class="w3-col m4 w3-margin-bottom">
+       <div class="w3-light-grey">            
+         <div class="w3-container" style="color: white; background-color: rgb(90, 89, 89);">
+           <h3>Contribute</h3>
+           <p class="w3-opacity"><i class="fa fa-envelope w3-hover-opacity"></i>&nbsp;tap2gauravsingh@gmail.com</p>
+         </div>
+       </div>
+     </div>
+     <div class="w3-col m4 w3-margin-bottom">
+       <div class="w3-light-grey">
+         <div class="w3-container" style="color: white; background-color: rgb(90, 89, 89);">
+           <h3>Social</h3>
+           <div class="w3-xlarge w3-padding-32">
+           
+             <a id="btun" href="https://www.facebook.com/profile.php?id=100073353016321"><i class="fa fa-facebook-official w3-hover-opacity "></i></a> &nbsp;
+             <a id="btun" href="https://www.instagram.com/gauravsingh._._._/"><i class="fa fa-instagram w3-hover-opacity "></i></a> &nbsp;
+             <a id="btun" href="https://twitter.com/GauravS00997828"><i class="fa fa-twitter w3-hover-opacity "></i></a> &nbsp;
+             <a id="btun" href="https://in.pinterest.com/tap2gauravsingh/_saved/"><i class="fa fa-pinterest w3-hover-opacity "></i></a> &nbsp;
+             <a id="btun" href="https://www.linkedin.com/in/codewithgauravsingh/"><i class="fa fa-linkedin w3-hover-opacity "></i></a>
+             
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+   </div>
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

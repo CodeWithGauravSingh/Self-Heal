@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mental</title>
+    <link rel="icon" href="iconpng.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Lato", sans-serif
+        }
+
+        .w3-bar,
+        h1,
+        button {
+            font-family: "Montserrat", sans-serif
+        }
+
+        a {
+            color: #079bf2;
+        }
+
+        a:hover {
+            color: #ff0000;
+        }
+
+        #btun {
+            background-color: transparent;
+            color: white;
+            border-color: black;
+        }
+
+        /* The subnavigation menu */
+        .subnav {
+            float: left;
+            overflow: hidden;
+        }
+
+        /* Style the subnav content - positioned absolute */
+        .subnav-content {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 50px;
+            background-color: white;
+            width: 100%;
+
+        }
+
+        /* Style the subnav links */
+        .subnav-content a {
+            float: left;
+            text-decoration: none;
+        }
+
+
+        /* When you move the mouse over the subnav container, open the subnav content */
+        .subnav:hover .subnav-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-card w3-left-align w3-large" style="background-color: #079bf2">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
+                href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                    class="fa fa-bars"></i></a>
+            <a href="homepage.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+            <a href="selfcare.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Self Care</a>
+            <!-- <a href="physical.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Physical</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large" style="background-color: #3b5476; color: white;">Mental</a> -->
+            <div class="subnav">
+                <div class="subnavbtn w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Physical <i
+                        class="fa fa-caret-down"></i></div>
+                <div class="subnav-content w3-padding-large w3-hover-white">
+                    <a href="physical.html">Exercise</a><br><br>
+                    <a href="physical_diet.html">Diet</a>
+                </div>
+            </div>
+            <div class="subnav">
+                <span style="background-color: #3b5476;">
+                    <div class="subnavbtn w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
+                        style="color: white;">Mental <i class="fa fa-caret-down"></i></div>
+                </span>
+                <div class="subnav-content w3-padding-large w3-hover-white">
+                    <a href="mental.html">Relaxation</a><br><br>
+                    <a href="mental_sleep.html">Sleep Hygiene</a>
+                </div>
+            </div>
+            <a href="social.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Social</a>
+            <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 4</a> -->
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+        </div>
+    </div>
+
+    <!-- Header -->
+
+
+    <header class="w3-center" style="padding:50px 10px">
+        <div class="cover" style="min-height: 500px; text-align: center; background-color: #3b5476;">
+            <img src="https://us.123rf.com/450wm/tartila/tartila1901/tartila190100039/115389886-lady-sleeping-at-night-woman-sleep-in-bed-under-duvet-girl-bedroom-home-interior-bedding-sleeping-dr.jpg?ver=6"
+                style="float: right; height: 400px; width: 500px; transform: translate(-100px,50px);">
+            <div class="overlaytext" style="float: left; transform: translate(50px,160px);">
+                <h1 class="w3-margin" style="color: white;"><span id="title"
+                        style="font-size: 60px; font-weight: 600;">Sleep Hygiene</span></h1>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Second Grid -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-third w3-center" style="padding-top: 200px;">
+                <iframe width="500" height="400" src="https://youtube.com/embed/OdRM9chZHaY" frameborder="0"
+                    allowfullscreen ng-show="showvideo" style="padding-top: 15px;"></iframe>
+            </div>
+
+            <div class="w3-twothird" style="padding-left: 200px;">
+                <h1><b>Sleep Hygiene</b></h1>
+
+                <h3 class="w3-padding-32"><b>Q.&nbsp;</b>What is sleep hygiene?<br>
+                    <b>Ans.&nbsp;</b>Sleep hygiene is a behavioral and environmental practice developed in the late
+                    1970s as a method to help people with mild to moderate insomnia. Clinicians assess the sleep hygiene
+                    of people with insomnia and conditions like depression, and offer recommendations based of
+                    assessment. Sleep hygiene recommendations include: establishing a regular sleep schedule; using naps
+                    with care; not exercising physically/mentally close bedtime;limiting worry; limiting to
+                    light before sleep getting out of bed.
+                </h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Third blog -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-twothird">
+                <h1>Sleep hygiene tips:</h1><br>
+                <h2 class="w3-padding-32"><span style="color: red;">❤</span> Maintain a regular sleep routine
+                </h2><br>
+                <h3>Go to bed at the same time. Wake up at the same time. Ideally, your schedule will remain the same
+                    (+/- 20 minutes) every night of the week.
+                </h3>
+
+            </div>
+
+            <div class="w3-third w3-center">
+                <iframe width="450" height="350" src="https://youtube.com/embed/gDNDlPejKr4" frameborder="0"
+                    allowfullscreen ng-show="showvideo" style="padding-top: 100px;"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fourth Blog -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-third w3-center">
+                <iframe width="500" height="400" src="https://youtube.com/embed/5YDHYy3snBE" frameborder="0"
+                    allowfullscreen ng-show="showvideo" style="padding-top: 100px;"></iframe>
+            </div>
+
+            <div class="w3-twothird" style="padding-left: 250px;">
+                <h2><span style="color: red;">❤</span>Avoid daytime naps</h2>
+                <h3 class="w3-padding-32">• Naps decrease the <a
+                        href="https://sleepassociation.org/about-sleep/sleep-debt/">‘Sleep Debt’</a> that is so
+                    necessary for easy sleep onset.<br>
+                    • Each of us needs a certain amount of sleep per 24-hour period. We need that amount, and we don’t
+                    need more than that.<br>
+                    • When we take naps, it decreases the amount of sleep that we need the next night – which may cause
+                    sleep fragmentation and difficulty initiating sleep, and may lead to <a
+                        href="https://sleepassociation.org/sleep-disorders/insomnia/">insomnia</a> and <a
+                        href="https://sleepassociation.org/sleep-disorders/sleep-deprivation/">sleep deprivation.</a>
+
+                </h3>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Fifth blog -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-twothird" style="padding-right: 20px;">
+
+
+                <h2><span style="color: red;">❤</span>Don’t stay in bed awake for more than 5-10 minutes</h2><br>
+
+                <h3>• If you find your mind racing, or worrying about not being able to sleep during the middle of the
+                    night, get out of bed, and sit in a chair in the dark. Do your mind racing in the chair until you
+                    are sleepy, then return to bed. No TV or internet during these periods! That will just stimulate you
+                    more than desired.<br>
+                    • If this happens several times during the night, that is OK. Just maintain your regular wake time,
+                    and try to avoid naps.<br>
+                </h3>
+            </div>
+
+            <div class="w3-third w3-center">
+                <iframe width="500" height="400" src="https://youtube.com/embed/qlxDoq9vohk" frameborder="0"
+                    allowfullscreen ng-show="showvideo" style="padding-top: 15px;"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sixth Grid -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-third w3-center" style="padding-top: 50px;">
+                <iframe width="450" height="350" src="https://youtube.com/embed/OlV8A-8VjJs" frameborder="0"
+                    allowfullscreen ng-show="showvideo" style="padding-top: 40px;"></iframe>
+            </div>
+
+            <div class="w3-twothird" style="padding-left: 150px;">
+                <h2><span style="color: red;">❤</span>Don’t watch TV, use the computer, or read in bed</h2><br>
+                <h3 class="w3-padding-32">• When you watch TV or read in bed, you associate the bed with
+                    wakefulness.<br>
+                    • The bed is reserved for two things – sleep and ‘hankypanky’.<br>
+                    • The <a
+                        href="https://www.sleepassociation.org/sleep-news/using-electronic-devices-decreases-sleep-quality">blue
+                        light</a> from the screen can actually adversely affect your circadian rhythm<br>
+                    • Using an inexpensive pair of <a
+                        href="https://www.amazon.com/gp/product/B085VSWBHF/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B085VSWBHF&linkCode=as2&tag=americansle01-20&linkId=77e20e3f26d44cfb0187f38df3053ab3">blue
+                        light blocking glasses</a> 2 hours before bed has been shown to <a
+                        href="https://psycnet.apa.org/record/2020-48711-001">improve the duration and quality of
+                        sleep.</a>
+
+                </h3>
+            </div>
+        </div>
+    </div>
+    <!-- Seventh Grid -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-twothird" style="padding-right: 10px;">
+                <h2 class="w3-padding-32"><span style="color: red;">❤</span>Drink caffeinated drinks with caution</h2>
+                <br>
+                <h3>• The effects of caffeine may last for several hours after ingestion. Caffeine can fragment sleep,
+                    and cause difficulty initiating sleep. If you drink caffeine, use it only before noon.<br>
+                    • Remember that soda and tea contain caffeine as well.
+
+                </h3>
+
+            </div>
+
+            <div class="w3-third w3-center">
+                <iframe width="450" height="350" src="https://youtube.com/embed/4UKjlz7C4zQ" frameborder="0"
+                    allowfullscreen ng-show="showvideo" style="padding-top: 40px;"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Eighth Blog -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-third w3-center">
+                <iframe width="450" height="350" src="https://youtube.com/embed/Y-8b99rGpkM" frameborder="0"
+                    allowfullscreen ng-show="showvideo" style="padding-top: 40px;"></iframe>
+            </div>
+
+            <div class="w3-twothird" style="padding-left: 150px;">
+                <h2><span style="color: red;">❤</span>Avoid inappropriate substances that interfere with sleep</h2><br>
+                <h3>• Cigarettes, alcohol, and over-the-counter medications may cause fragmented sleep.
+                </h3>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Ninth blog -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-twothird" style="padding-right: 50px;">
+
+
+                <h2><span style="color: red;">❤</span>Clean fresh air</h2><br>
+                <h3>• Crack a window to make sure you have plenty of fresh air.<br>
+                    • If you want to avoid a draft, use an air purifier that removes bacteria and odors from the room
+                    air.<br><br>
+                    <h2>Exercise before 2 pm every day. Exercise promotes continuous sleep</h2><br>
+                    <h3>• Avoid rigorous exercise before bedtime. Rigorous exercise circulates endorphins into the body
+                        which may cause difficulty initiating sleep.</h3>
+
+                </h3>
+            </div>
+
+            <div class="w3-third w3-center">
+                <iframe width="450" height="350" src="https://youtube.com/embed/43qVfQXn2cs" frameborder="0"
+                    allowfullscreen ng-show="showvideo" style="padding-top: 40px;"></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- Tenth Blog -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-third w3-center">
+                <iframe width="500" height="400" src="https://youtube.com/embed/1FLRGat2Z6I" frameborder="0"
+                    allowfullscreen ng-show="showvideo" style="padding-top: 40px;"></iframe>
+            </div>
+
+            <div class="w3-twothird" style="padding-left: 200px;">
+                <h2><span style="color: red;">❤</span>Have a quiet, comfortable bedroom</h2>
+                <h3>• Set your bedroom thermostat at a comfortable temperature. Generally, a little cooler is better
+                    than a little warmer.<br>
+                    • Turn off the TV and other extraneous noise that may disrupt sleep. Background ‘white noise’ like a
+                    fan is OK.<br>
+                    • If your pets awaken you, keep them outside the bedroom.<br>
+                    • Your bedroom should be dark. Turn off bright lights.<br>
+                    • Have a <a href="https://sleepassociation.org/mattresses/">comfortable mattress.</a><br>
+                    • If your bed partner snores, this could be fragmenting your sleep. Consider <a
+                        href="https://sleepassociation.org/top-anti-snoring-mouthpieces-mouth-guards-reviews/">snoring
+                        remedies</a> to help stop snoring.<br>
+
+
+                </h3>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- About Us -->
+    <div class="w3-container" id="contact"
+        style="margin-top:75px; padding-top: 30px; background-color: rgb(90, 89, 89);">
+        <div class="w3-row-padding w3-grayscale">
+            <div class="w3-col m4 w3-margin-bottom">
+                <div class="w3-light-grey">
+                    <div class="w3-container" style="color: white; background-color: rgb(90, 89, 89);">
+                        <h3>About Us</h3>
+                        <p class="w3-opacity">Indian Institute Of Information Technology, Allahabad<br>Road Devghat,
+                            Jhalwa, Prayagraj<br>Uttar Pradesh (211015)</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col m4 w3-margin-bottom">
+                <div class="w3-light-grey">
+                    <div class="w3-container" style="color: white; background-color: rgb(90, 89, 89);">
+                        <h3>Contribute</h3>
+                        <p class="w3-opacity"><i
+                                class="fa fa-envelope w3-hover-opacity"></i>&nbsp;tap2gauravsingh@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col m4 w3-margin-bottom">
+                <div class="w3-light-grey">
+                    <div class="w3-container" style="color: white; background-color: rgb(90, 89, 89);">
+                        <h3>Social</h3>
+                        <div class="w3-xlarge w3-padding-32">
+
+                            <a id="btun" href="https://www.facebook.com/profile.php?id=100073353016321"><i
+                                    class="fa fa-facebook-official w3-hover-opacity "></i></a> &nbsp;
+                            <a id="btun" href="https://www.instagram.com/gauravsingh._._._/"><i
+                                    class="fa fa-instagram w3-hover-opacity "></i></a> &nbsp;
+                            <a id="btun" href="https://twitter.com/GauravS00997828"><i
+                                    class="fa fa-twitter w3-hover-opacity "></i></a> &nbsp;
+                            <a id="btun" href="https://in.pinterest.com/tap2gauravsingh/_saved/"><i
+                                    class="fa fa-pinterest w3-hover-opacity "></i></a> &nbsp;
+                            <a id="btun" href="https://www.linkedin.com/in/codewithgauravsingh/"><i
+                                    class="fa fa-linkedin w3-hover-opacity "></i></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

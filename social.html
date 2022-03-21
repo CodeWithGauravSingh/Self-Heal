@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Social</title><link rel="icon" href="iconpng.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Lato", sans-serif;
+        }
+
+        .w3-bar,
+        h1,
+        button {
+            font-family: "Montserrat", sans-serif;
+        }
+
+        a {
+            color: #079bf2;
+        }
+
+        a:hover {
+            color: #ff0000;
+        }
+
+        #btun {
+            background-color: transparent;
+            color: white;
+            border-color: black;
+        }
+
+        /* The subnavigation menu */
+        .subnav {
+            float: left;
+            overflow: hidden;
+        }
+
+        /* Style the subnav content - positioned absolute */
+        .subnav-content {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 50px;
+            background-color: white;
+            width: 100%;
+
+        }
+
+        /* Style the subnav links */
+        .subnav-content a {
+            float: left;
+            text-decoration: none;
+        }
+
+
+        /* When you move the mouse over the subnav container, open the subnav content */
+        .subnav:hover .subnav-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-card w3-left-align w3-large" style="background-color: #079bf2">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
+                href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                    class="fa fa-bars"></i></a>
+            <a href="homepage.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+            <a href="selfcare.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Self Care</a>
+            <!-- <a href="physical.html"
+                class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Physical</a>
+            <a href="mental.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Mental</a> -->
+            <div class="subnav">
+                <div class="subnavbtn w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Physical <i
+                        class="fa fa-caret-down"></i></div>
+                <div class="subnav-content w3-padding-large w3-hover-white">
+                    <a href="physical.html">Exercise</a><br><br>
+                    <a href="physical_diet.html">Diet</a>
+                </div>
+            </div>
+            <div class="subnav">
+                <div class="subnavbtn w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Mental <i
+                        class="fa fa-caret-down"></i></div>
+                <div class="subnav-content w3-padding-large w3-hover-white">
+                    <a href="mental.html">Relaxation</a><br><br>
+                    <a href="mental_sleep.html">Sleep Hygiene</a>
+                </div>
+            </div>
+            <a href="social.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-purple">Social</a>
+            <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 4</a> -->
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <!-- <header class=" w3-pink" style="padding:128px 16px"><img src="https://media.istockphoto.com/vectors/young-woman-getting-help-and-cure-from-stress-vector-id1215549446?k=20&m=1215549446&s=612x612&w=0&h=ZeGd1E1Oj6LVKCwiVsk3c_1AtkdOl73mqf0BPHUB1iQ=" style="margin-left: 100px;width: 500px; height: 500px;">
+        <iframe width="600" height="350" src="https://youtube.com/embed/RijQpsWEdrE" frameborder="0" allowfullscreen ng-show="showvideo" style="margin-right: 100px; float: right;margin-top: 40px;" ></iframe>
+
+    </header> -->
+    <header class="w3-center" style="padding:50px 10px">
+        <div class="cover" style="min-height: 550px; text-align: center; background-color: purple;">
+            <img src="https://media.istockphoto.com/vectors/young-woman-getting-help-and-cure-from-stress-vector-id1215549446?k=20&m=1215549446&s=612x612&w=0&h=ZeGd1E1Oj6LVKCwiVsk3c_1AtkdOl73mqf0BPHUB1iQ="
+                style="float: right; height: 450px; width: 450px; transform: translate(-50px,50px);">
+            <div class="overlaytext" style="float: left; transform: translate(50px,160px);">
+                <h1 class="w3-margin" style="color: white;"><span id="title"
+                        style="font-size: 60px; font-weight: 600;">Social Health</span></h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- Definition -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div>
+            <div class="w3-third w3-center">
+                <iframe width="500" height="400" src="https://youtube.com/embed/17jeXGbKlTQ" frameborder="0"
+                    allowfullscreen ng-show="showvideo" style="float: left; margin-left: 100px;"></iframe>
+            </div>
+            <div class="w3-twothird" style="padding-left: 150px; padding-right: 150px;">
+                <h1 style="font-size: 40px;">Definition:</h1>
+                <h3 class="w3-padding-32">Social health can be defined as our ability to interact and form meaningful
+                    relationships with others. It also relates to how comfortably we can adapt in social situations.
+                    Social relationships have an impact on our mental health, physical health and mortality risk.
+                </h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Importance -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div>
+            <div class="w3-twothird" style="padding-left: 150px; padding-right: 200px;">
+                <h1 style="font-size: 40px;">Why is Social Health Important?</h1>
+                <h4 class="w3-padding-32">Our social health and social wellness are a vital part of our overall health
+                    and wellbeing. According to the Australian Government “social relationships are protective of mental
+                    health”.<br>
+
+                    We interact with people every day. The quality and quantity of our relationships affect our mental
+                    and physical wellbeing. Maintaining a good level of social wellness lets you build interpersonal
+                    relationships with others. These relationships include friendships, intimate relationships,
+                    platonic, family, and professional (work) relationships.
+                </h4>
+            </div>
+
+            <div class="w3-third w3-center">
+                <iframe width="500" height="400" src="https://youtube.com/embed/O16Cz0dXF_Q" frameborder="0"
+                    allowfullscreen ng-show="showvideo" style="float: right; margin-right: 100px;"></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- Definition -->
+
+
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div>
+            <div class="w3-third w3-center">
+                <iframe width="500" height="400" src="https://youtube.com/embed/8az-gfljEbg" frameborder="0"
+                    allowfullscreen ng-show="showvideo" style="float: left; margin-left: 100px;"></iframe>
+            </div>
+            <div class="w3-twothird" style="padding-left: 150px; padding-right: 150px;">
+                <h1 style="font-size: 40px;">Definition:</h1>
+                <h3 class="w3-padding-32">How can you make more social connections?
+                    <br>&#128512;Invite a friend who makes you laugh, and go to a funny movie.
+                    <br>&#128512; Send an encouraging email or text message to someone who's going through a hard time.
+                    <br>&#128512; Look for a faith community that shares your views. ...
+                    <br>&#128512; Call a food bank or hospital and ask about their volunteer programs.
+                </h3>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div>
+            <div class="w3-twothird" style="padding-left: 150px; padding-right: 200px;">
+                <h1 style="font-size: 40px;">Social Connections Importance
+                    The benefits of social connectedness shouldn’t be overlooked.</h1>
+                <h4 class="w3-padding-32">Improve your quality of life:
+                    <br>&#127917; Boost your mental health
+                    <br>&#127917; Help you live longer:
+                    <br>&#127917; Decrease your risk of suicide
+                </h4>
+            </div>
+
+            <div class="w3-third w3-center">
+                <iframe width="500" height="400" src="https://youtube.com/embed/WZvUppaDfNs" frameborder="0"
+                    allowfullscreen ng-show="showvideo" style="float: right; margin-right: 100px;"></iframe>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div>
+            <div class="w3-third w3-center">
+                <iframe width="500" height="400" src="https://youtube.com/embed/8PH4JYfF4Ns" frameborder="0"
+                    allowfullscreen ng-show="showvideo" style="float: left; margin-left: 100px;"></iframe>
+            </div>
+            <div class="w3-twothird" style="padding-left: 150px; padding-right: 150px;">
+                <h3 class="w3-padding-32">Signs of good social health include:
+
+                    <br> &#128204;Balancing your social and personal time
+                    <br> &#128204;Being your true self at all times
+                    <br> &#128204;Engaging with people in your community
+                    <br> &#128204; Treating others with respect
+                    <br> &#128204;Maintaining and building strong relationships with friends
+                    <br> &#128204;Creating healthy boundaries that help with communication, trust and conflict
+                    management
+                    <br> &#128204;Turning to friends and family for support
+                    <br> &#128204;Communicating effectively
+                </h3>
+            </div>
+        </div>
+    </div>
+    <!-- First Grid -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div>
+            <div class="w3-twothird" style="padding-left: 150px; padding-right: 200px;">
+                <h4 class="w3-padding-32">&#128578; “It didn’t matter how big our house was; it mattered that there was
+                    love in
+                    it.” — Peter Buffett<br>&#128578;
+                    “Call it a clan, call it a network, call it a tribe, call it a family: Whatever you call it,
+                    whoever you are,
+                    you need one.” — Jane Howard<br>&#128578;
+                    “Family means nobody gets left behind or forgotten.” — David Ogden Stiers<br>
+                    &#128578; “We may have our differences, but nothing’s more important than family.” –Coco<br>
+                </h4>
+            </div>
+
+            <div class="w3-third w3-center">
+                <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIdbJ_DAsmmvRZoVBhS7TKVMLuLpgqGJtC4Oaff4y_mNcOGm-c&s"> -->
+                <iframe width="500" height="400" src="https://youtube.com/embed/RijQpsWEdrE" frameborder="0"
+                    allowfullscreen ng-show="showvideo" style="float: right; margin-right: 100px;"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Grid -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div>
+            <div class="w3-third w3-center">
+                <iframe width="500" height="400" src="https://youtube.com/embed/8PH4JYfF4Ns" frameborder="0"
+                    allowfullscreen ng-show="showvideo" style="float: left; margin-left: 100px;"></iframe>
+            </div>
+            <div class="w3-twothird" style="padding-left: 150px; padding-right: 150px;">
+                <h5 class="w3-padding-32">
+
+                    <br>&#128578;“Friendship is the hardest thing in the world to explain. It’s not something
+                    you learn in school. But if you haven’t learned the meaning of friendship,
+                    you really haven’t learned anything.” — Muhammad Ali<br>&#128578;
+                    “Don’t make friends who are comfortable to be with. Make friends who will
+                    force you to lever yourself up.” — Thomas J. Watson<br>&#128578;
+                    “The most beautiful discovery true friends make is that they can grow
+                    separately without growing apart.” — Elisabeth Foley<br>&#128578;
+                    “Each friend represents a world in us, a world possibly not born until they
+                    arrive, and it is only by this meeting that a new world is born.” — Anais Nin
+                </h5>
+            </div>
+        </div>
+        <div class="w3-row-padding w3-padding-64 w3-container">
+            <div>
+
+                <div class="w3-twothird" style="padding: center;">
+                    <h3 class="w3-padding-32">Some family games to enjoy in free time:<br>
+
+                        <a href="https://youtube.com/shorts/fHiJSO4wK18?feature=share" style="text-decoration: none;">
+                            &#128204;Game 1</a></p>
+                        <a href="https://youtube.com/shorts/o6XNjlDMHW8?feature=share" style="text-decoration: none;">
+                            &#128204;Game 2</a></p>
+                        <a href="https://youtu.be/Nl_kvv2Ov9M" style="text-decoration: none;"> &#128204;Game 3</a></p>
+                        <a href="https://youtu.be/_UKiZ4QI8aM" style="text-decoration: none;"> &#128204;Game 4</a></p>
+                        <a href="https://youtu.be/2HYB1wiT94Y" style="text-decoration: none;"> &#128204;Game 5</a></p>
+
+
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <!-- Third blog -->
+
+        <!-- Fourth Blog -->
+
+
+
+        <!-- About Us -->
+        <div class="w3-container" id="contact"
+            style="margin-top:75px; padding-top: 30px; background-color: rgb(90, 89, 89);">
+            <div class="w3-row-padding w3-grayscale">
+                <div class="w3-col m4 w3-margin-bottom">
+                    <div class="w3-light-grey">
+                        <div class="w3-container" style="color: white; background-color: rgb(90, 89, 89);">
+                            <h3>About Us</h3>
+                            <p class="w3-opacity">Indian Institute Of Information Technology, Allahabad<br>Road Devghat,
+                                Jhalwa, Prayagraj<br>Uttar Pradesh (211015)</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-col m4 w3-margin-bottom">
+                    <div class="w3-light-grey">
+                        <div class="w3-container" style="color: white; background-color: rgb(90, 89, 89);">
+                            <h3>Contribute</h3>
+                            <p class="w3-opacity"><i
+                                    class="fa fa-envelope w3-hover-opacity"></i>&nbsp;tap2gauravsingh@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-col m4 w3-margin-bottom">
+                    <div class="w3-light-grey">
+                        <div class="w3-container" style="color: white; background-color: rgb(90, 89, 89);">
+                            <h3>Social</h3>
+                            <div class="w3-xlarge w3-padding-32">
+
+                                <a id="btun" href="https://www.facebook.com/profile.php?id=100073353016321"><i
+                                        class="fa fa-facebook-official w3-hover-opacity "></i></a> &nbsp;
+                                <a id="btun" href="https://www.instagram.com/gauravsingh._._._/"><i
+                                        class="fa fa-instagram w3-hover-opacity "></i></a> &nbsp;
+                                <a id="btun" href="https://twitter.com/GauravS00997828"><i
+                                        class="fa fa-twitter w3-hover-opacity "></i></a> &nbsp;
+                                <a id="btun" href="https://in.pinterest.com/tap2gauravsingh/_saved/"><i
+                                        class="fa fa-pinterest w3-hover-opacity "></i></a> &nbsp;
+                                <a id="btun" href="https://www.linkedin.com/in/codewithgauravsingh/"><i
+                                        class="fa fa-linkedin w3-hover-opacity "></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            // Used to toggle the menu on small screens when clicking on the menu button
+            function myFunction() {
+                var x = document.getElementById("navDemo");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else {
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+        </script>
+
+</body>
+
+</html>

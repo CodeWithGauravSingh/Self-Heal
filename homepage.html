@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Self Heal</title>
+  <link rel="icon" href="iconpng.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: "Poppins", sans-serif
+    }
+
+    body {
+      font-size: 16px;
+    }
+
+    .w3-half img {
+      margin-bottom: -6px;
+      margin-top: 16px;
+      opacity: 0.8;
+      cursor: pointer;
+    }
+
+    .w3-half img:hover {
+      opacity: 1;
+    }
+
+    a {
+      color: #079bf2;
+    }
+
+    a:hover {
+      color: rgb(243, 10, 99);
+    }
+
+    #homebutton {
+      background-color: #079bf2;
+      color: white;
+      cursor: pointer;
+      border-radius: 10px;
+      padding: 8px;
+    }
+
+    #homebutton:hover {
+      background-color: rgb(243, 10, 99);
+      color: white;
+      border-color: black;
+    }
+
+    #mySidebar {
+      background-color: rgb(243, 10, 99);
+      color: white;
+    }
+
+    #btn {
+      background-color: #079bf2;
+      color: white;
+      cursor: pointer;
+      border-radius: 10px;
+      padding: 8px;
+    }
+
+    #btn:hover {
+      background-color: rgb(243, 10, 99);
+      color: white;
+      border-color: black;
+    }
+
+    #btun {
+      background-color: transparent;
+      color: white;
+      border-color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;"
+    id="mySidebar"><br>
+    <a href="javascript:void(0)" onclick="close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width:100%;font-size:22px">Close Menu</a>
+    <div class="w3-container">
+      <h3 class="w3-padding-64">
+        <img src="iconpng.png" style="height: 70px; width: 50px;">
+        <b>Self Heal</b>
+      </h3>
+    </div>
+    <div class="w3-bar-block"><img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv4YD_o5NXiVDHOgBq8TIwq2BOqjWXBU8rlQ&usqp=CAU"
+        width="250">
+
+      <a href="#" onclick="close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+      <a href="#Self_Care" onclick="close()" class="w3-bar-item w3-button w3-hover-white">Self Care</a>
+      <a href="#Physical" onclick="close()" class="w3-bar-item w3-button w3-hover-white">Physical</a>
+      <a href="#Mental" onclick="close()" class="w3-bar-item w3-button w3-hover-white">Mental</a>
+      <a href="#Social" onclick="close()" class="w3-bar-item w3-button w3-hover-white">Social</a>
+      <a href="#Note_Making" onclick="close()" class="w3-bar-item w3-button w3-hover-white">Note Making</a>
+      <a href="#BMI_Calculator" onclick="close()" class="w3-bar-item w3-button w3-hover-white">BMI Calculator</a>
+
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Self Heal</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="close()" style="cursor:pointer" title="close side menu" id="myOverlay">
+  </div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+    <!-- Header -->
+    <header class="w3-center">
+      <div class="cover" style="min-height: 500px; text-align: center; background-color: #fbe2c3;">
+        <img src="https://media1.giphy.com/media/l617W078T9ZxJz4GUt/giphy.gif" style="height: 400px; width: 400px;">
+      </div>
+    </header>
+    <div class="w3-container" style="margin-top:80px" id="Self_Care">
+      <h1 class="w3-jumbo"><b></b></h1>
+      <h1 class="w3-xxxlarge" style="color: #079bf2;"><b>Self Care</b></h1>
+      <hr style="width:50px;border:5px solid #079bf2" class="w3-round">
+      <p>‘Self-Care is what people do for themselves to establish and maintain health, and to prevent and deal with
+        illness. It is a broad concept encompassing hygiene (general and personal), nutrition (type and quality of food
+        eaten), lifestyle (sporting activities, leisure etc), environmental factors (living conditions, social habits,
+        etc.) socio-economic factors (income level, cultural beliefs, etc.) and self-medication.’
+      </p>
+      <p><b>Our team has thoughtfully chosen these relevant videos</b>:</p>
+
+      <div class="w3-row-padding ">
+        <div class="w3-col m4 w3-margin-bottom">
+          <div class="w3-light-grey">
+            <iframe width="330" height="200" src="https://youtube.com/embed/OdRM9chZHaY" frameborder="0" allowfullscreen
+              ng-show="showvideo" style="padding-left: 10px;"></iframe>
+            <div class="w3-container">
+
+              <p>“Don't sacrifice yourself too much, because if you sacrifice too much there's nothing else you can
+                give, and nobody will care for you.” </p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col m4 w3-margin-bottom">
+          <div class="w3-light-grey">
+            <iframe width="330" height="200" src="https://youtube.com/embed/bzxDYwTarzw" frameborder="0" allowfullscreen
+              ng-show="showvideo" style="padding-left: 10px;"></iframe>
+            <div class="w3-container">
+
+              <p>“The thing that is really hard, and really amazing, is giving up on being perfect and beginning the
+                work of becoming yourself.”</p>
+            </div>
+
+          </div>
+        </div>
+        <div class="w3-col m4 w3-margin-bottom">
+          <div class="w3-light-grey">
+            <iframe width="330" height="200" src="https://youtube.com/embed/o18I23HCQtE" frameborder="0" allowfullscreen
+              ng-show="showvideo" style="padding-left: 10px;"></iframe>
+            <div class="w3-container">
+
+              <p>“Until you value yourself, you won’t value your time. Until you value your time, you will not do
+                anything with it.”<br>&nbsp;</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <a href="selfcare.html" style="text-decoration: none;">Read more &#8594;</a>
+
+    </div>
+
+    <!-- Physical -->
+    <div class="w3-container" id="Physical" style="margin-top:75px">
+      <h1 class="w3-xxxlarge" style="color: #079bf2;"><b>Physical</b></h1>
+      <hr style="width:50px;border:5px solid #079bf2" class="w3-round">
+      <p>Physical health is the state of being free from illness or injury. It can cover a wide range of areas including
+        healthy diet, healthy weight, dental health, personal hygiene and sleep. Physical health is vital for overall
+        well-being.</p>
+      <p><b>Our team has thoughtfully chosen these relevant videos</b>:</p>
+
+      <div class="w3-row-padding ">
+        <div class="w3-col m4 w3-margin-bottom">
+          <div class="w3-light-grey">
+            <iframe width="330" height="200" src="https://youtube.com/embed/9PN8fcZM0AQ" frameborder="0" allowfullscreen
+              ng-show="showvideo" style="padding-left: 10px;"></iframe>
+
+            <div class="w3-container">
+              <p>"To keep the body in good health is a duty…otherwise we shall not be able to keep the mind strong and
+                clear.” </p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col m4 w3-margin-bottom">
+          <div class="w3-light-grey">
+            <iframe width="330" height="200" src="https://youtube.com/embed/1Je0mu4GG-o" frameborder="0" allowfullscreen
+              ng-show="showvideo" style="padding-left: 10px;"></iframe>
+
+            <div class="w3-container">
+              <p> "Good health is not something we can buy. However, it can be an extremely valuable savings
+                account.”&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col m4 w3-margin-bottom">
+          <div class="w3-light-grey">
+            <iframe width="330" height="200" src="https://youtube.com/embed/GNWaWJm1A1g" frameborder="0" allowfullscreen
+              ng-show="showvideo" style="padding-left: 10px;"></iframe>
+
+            <div class="w3-container">
+              <p>"The cheerful mind perseveres, and the strong mind hews its way through a thousand difficulties.” </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="physical.html" style="text-decoration: none;">Read more &#8594;</a>
+    </div>
+
+    <!-- Mental -->
+    <div class="w3-container" id="Mental" style="margin-top:75px">
+      <h1 class="w3-xxxlarge" style="color: #079bf2;"><b>Mental</b></h1>
+      <hr style="width:50px;border:5px solid #079bf2" class="w3-round">
+      <p>Mental health refers to cognitive, behavioral, and emotional well-being. It is all about how people think,
+        feel, and behave. People sometimes use the term “mental health” to mean the absence of a mental disorder. Mental
+        health can affect daily living, relationships, and physical health.</p>
+      <p><b>Our team has thoughtfully chosen these relevant videos</b>:</p>
+
+
+      <!-- Images -->
+      <div class="w3-row-padding ">
+        <div class="w3-col m4 w3-margin-bottom">
+          <div class="w3-light-grey">
+            <iframe width="330" height="200" src="https://youtube.com/embed/NQcYZplTXnQ" frameborder="0" allowfullscreen
+              ng-show="showvideo" style="padding-left: 10px;"></iframe>
+
+            <div class="w3-container">
+              <p>“Take your time healing, as long as you want. Nobody else knows what you’ve been through. How could
+                they know how long it will take to heal you?”</p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col m4 w3-margin-bottom">
+          <div class="w3-light-grey">
+            <iframe width="330" height="200" src="https://youtube.com/embed/3QIfkeA6HBY" frameborder="0" allowfullscreen
+              ng-show="showvideo" style="padding-left: 10px;"></iframe>
+
+            <div class="w3-container">
+              <p> “You don't have to control your thoughts.You just have to stop letting them control you.”<br>&nbsp;
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col m4 w3-margin-bottom">
+          <div class="w3-light-grey">
+            <iframe width="330" height="200" src="https://youtube.com/embed/FT-AAyvJ9mk" frameborder="0" allowfullscreen
+              ng-show="showvideo" style="padding-left: 10px;"></iframe>
+
+            <div class="w3-container">
+              <p>“One small crack does not mean that you are broken, it means that you were put to the test and you
+                didn’t fall apart.”</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="mental.html" style="text-decoration: none;">Read more &#8594;</a>
+    </div>
+
+
+    <!-- Social -->
+    <div class="w3-container" id="Social" style="margin-top:75px">
+      <h1 class="w3-xxxlarge" style="color: #079bf2;"><b>Social</b></h1>
+      <hr style="width:50px;border:5px solid #079bf2" class="w3-round">
+      <p>Social health is more than just the prevention of mental illness and social problems. Being socially healthy
+        means increased degree of happiness including sense of belonging and concern for others. As we grow, social ties
+        start building their place in our lives.</p>
+      <p><b>Our team has thoughtfully chosen these relevant videos</b>:</p>
+
+      <div class="w3-row-padding ">
+        <div class="w3-col m4 w3-margin-bottom">
+          <div class="w3-light-grey">
+            <iframe width="330" height="200" src="https://youtube.com/embed/FT-AAyvJ9mk" frameborder="0" allowfullscreen
+              ng-show="showvideo" style="padding-left: 10px;"></iframe>
+
+            <div class="w3-container">
+              <p>“When a flower doesn’t bloom, you fix the environment in which it grows, not the flower.” </p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col m4 w3-margin-bottom">
+          <div class="w3-light-grey">
+            <iframe width="330" height="200" src="https://youtube.com/embed/nTqknri15fQ" frameborder="0" allowfullscreen
+              ng-show="showvideo" style="padding-left: 10px;"></iframe>
+
+            <div class="w3-container">
+              <p>“I am no longer accepting the things I cannot change. I am changing the things I cannot accept.”</p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col m4 w3-margin-bottom">
+          <div class="w3-light-grey">
+            <iframe width="330" height="200" src="https://youtube.com/embed/RijQpsWEdrE" frameborder="0" allowfullscreen
+              ng-show="showvideo" style="padding-left: 10px;"></iframe>
+
+            <div class="w3-container">
+              <p>“There is no greater joy nor greater reward than to make a fundamental difference in someone’s life.”
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="social.html" style="text-decoration: none;">Read more &#8594;</a>
+    </div>
+
+
+    <!-- Note Making -->
+    <div class="w3-container" id="Note_Making" style="margin-top:75px">
+      <h1 class="w3-xxxlarge" style="color: #079bf2;"><b>Note Making</b></h1>
+      <hr style="width:50px;border:5px solid #079bf2" class="w3-round">
+      <p>Note-taking is an important skill for students, especially at the college level. In some contexts, such as
+        college lectures, the main purpose of taking notes may be to implant the material in the mind, the written notes
+        themselves being of secondary importance. Many studies have been able to show that note taking in college
+        students has helped them become more engaged in the lecture and allowed them to better comprehend the material.
+        Even when students fail to return to their notes and study them, they have shown higher test scores and better
+        comprehension when they take notes versus not taking notes. The difference is even more significant when the
+        notes are hand written and reworded rather than merely transcribed or typed.</p>
+      <p>Note making is not just about writing down everything you hear or read. It is a process of reviewing,
+        connecting and synthesising ideas from your lectures or reading. Making notes helps you to: stay active and
+        engaged during your lectures, reading and revision.
+      </p>
+      <br>
+      <button id="homebutton" onclick="window.location.href='notemaker.html'">Make Notes</button>
+    </div>
+
+
+    <!--BMI Calculator-->
+
+    <div class="w3-container" id="BMI_Calculator" style="margin-top:75px">
+      <h1 class="w3-xxxlarge" style="color: #079bf2;"><b>BMI Calculator</b></h1>
+      <hr style="width:50px;border:5px solid #079bf2" class="w3-round">
+      <p>BMI is an estimate of body fat and a good gauge of your risk for diseases that can occur with more body fat.
+        The higher your BMI, the higher your risk for certain diseases such as heart disease, high blood pressure, type
+        2 diabetes, gallstones, breathing problems, and certain cancers.
+      </p>
+      <br>
+      <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+          <div class="w3-twothird">
+
+
+            <h2>BMI Calculator</h2><br>
+            Option for providing height
+            and weight to the user
+            <p>Height (in cm)</p>
+
+            <input type="text" id="height">
+
+            <p>Weight (in kg)</p>
+
+            <input type="text" id="weight"><br>&nbsp;<br>
+
+            <button id="btn">Calculate</button><br>&nbsp;<br>
+
+
+            <div id="result"></div>
+
+          </div>
+
+          <div class="w3-third" style="margin-left: -100px;">
+            <iframe width="500" height="350" src="https://youtube.com/embed/1LWuG1lOXJs" frameborder="0" allowfullscreen
+              ng-show="showvideo" style="padding-left: 10px;"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- About Us -->
+    <div class="w3-container" id="contact"
+      style="margin-top:75px; padding-top: 30px; background-color: rgb(90, 89, 89);">
+      <div class="w3-row-padding w3-grayscale">
+        <div class="w3-col m4 w3-margin-bottom">
+          <div class="w3-light-grey">
+            <div class="w3-container" style="color: white; background-color: rgb(90, 89, 89);">
+              <h3>About Us</h3>
+              <p class="w3-opacity">Indian Institute Of Information Technology, Allahabad<br>Road Devghat, Jhalwa,
+                Prayagraj<br>Uttar Pradesh (211015)</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="w3-col m4 w3-margin-bottom">
+          <div class="w3-light-grey">
+            <div class="w3-container" style="color: white; background-color: rgb(90, 89, 89);">
+              <h3>Contribute</h3>
+              <p class="w3-opacity"><i class="fa fa-envelope w3-hover-opacity"></i>&nbsp;tap2gauravsingh@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col m4 w3-margin-bottom">
+          <div class="w3-light-grey">
+            <div class="w3-container" style="color: white; background-color: rgb(90, 89, 89);">
+              <h3>Social</h3>
+              <div class="w3-xlarge w3-padding-32">
+
+                <a id="btun" href="https://www.facebook.com/profile.php?id=100073353016321"><i
+                    class="fa fa-facebook-official w3-hover-opacity "></i></a> &nbsp;
+                <a id="btun" href="https://www.instagram.com/gauravsingh._._._/"><i
+                    class="fa fa-instagram w3-hover-opacity "></i></a> &nbsp;
+                <a id="btun" href="https://twitter.com/GauravS00997828"><i
+                    class="fa fa-twitter w3-hover-opacity "></i></a> &nbsp;
+                <a id="btun" href="https://in.pinterest.com/tap2gauravsingh/_saved/"><i
+                    class="fa fa-pinterest w3-hover-opacity "></i></a> &nbsp;
+                <a id="btun" href="https://www.linkedin.com/in/codewithgauravsingh/"><i
+                    class="fa fa-linkedin w3-hover-opacity "></i></a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- W3.CSS Container -->
+
+    <script>
+      // Script to open and close sidebar
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+      }
+
+      function close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+      }
+
+      // Modal Image Gallery
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+      }
+
+      // BMI Calculator
+      window.onload = () => {
+        let button = document.querySelector("#btn");
+
+        // Function for calculating BMI
+        button.addEventListener("click", calculateBMI);
+      };
+
+      function calculateBMI() {
+
+        /* Getting input from user into height variable.
+        Input is string so typecasting is necessary. */
+        let height = parseInt(document
+          .querySelector("#height").value);
+
+        /* Getting input from user into weight variable.
+        Input is string so typecasting is necessary.*/
+        let weight = parseInt(document
+          .querySelector("#weight").value);
+
+        let result = document.querySelector("#result");
+
+        // Checking the user providing a proper
+        // value or not
+        if (height === "" || isNaN(height))
+          result.innerHTML = "Provide a valid Height!";
+
+        else if (weight === "" || isNaN(weight))
+          result.innerHTML = "Provide a valid Weight!";
+
+        // If both input is valid, calculate the bmi
+        else {
+
+          // Fixing upto 2 decimal places
+          let bmi = (weight / ((height * height)
+            / 10000)).toFixed(2);
+
+          // Dividing as per the bmi conditions
+          if (bmi < 18.6) result.innerHTML =
+            `Under Weight : <span>${bmi}</span>`;
+
+          else if (bmi >= 18.6 && bmi < 24.9)
+            result.innerHTML =
+              `Normal : <span>${bmi}</span>`;
+
+          else result.innerHTML =
+            `Over Weight : <span>${bmi}</span>`;
+        }
+      }
+
+
+    </script>
+
+</body>
+
+</html>

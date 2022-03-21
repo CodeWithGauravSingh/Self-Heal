@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Self Care</title>
+    <link rel="icon" href="iconpng.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Lato", sans-serif
+        }
+
+        .w3-bar,
+        h1,
+        button {
+            font-family: "Montserrat", sans-serif
+        }
+
+        a {
+            color: #079bf2;
+        }
+
+        a:hover {
+            color: #ff0000;
+        }
+
+        #btun {
+            background-color: transparent;
+            color: white;
+            border-color: black;
+        }
+
+        /* The subnavigation menu */
+        .subnav {
+            float: left;
+            overflow: hidden;
+        }
+
+        /* Style the subnav content - positioned absolute */
+        .subnav-content {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 50px;
+            background-color: white;
+            width: 100%;
+
+        }
+
+        /* Style the subnav links */
+        .subnav-content a {
+            float: left;
+            text-decoration: none;
+        }
+
+
+        /* When you move the mouse over the subnav container, open the subnav content */
+        .subnav:hover .subnav-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-card w3-left-align w3-large" style="background-color: #079bf2">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
+                href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                    class="fa fa-bars"></i></a>
+            <a href="homepage.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large w3-pink">Self Care</a>
+            <!-- <a href="physical.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Physical</a>
+            <a href="mental.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Mental</a> -->
+            <div class="subnav">
+                <div class="subnavbtn w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Physical <i
+                        class="fa fa-caret-down"></i></div>
+                <div class="subnav-content w3-padding-large w3-hover-white">
+                    <a href="physical.html">Exercise</a><br><br>
+                    <a href="physical_diet.html">Diet</a>
+                </div>
+            </div>
+            <div class="subnav">
+                <div class="subnavbtn w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Mental <i
+                        class="fa fa-caret-down"></i></div>
+                <div class="subnav-content w3-padding-large w3-hover-white">
+                    <a href="mental.html">Relaxation</a><br><br>
+                    <a href="mental_sleep.html">Sleep Hygiene</a>
+                </div>
+            </div>
+            <a href="social.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Social</a>
+            <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 4</a> -->
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+        </div>
+    </div>
+
+    <!-- Header -->
+
+    <header class="w3-center" style="padding:50px 10px">
+        <div class="cover" style="min-height: 500px; text-align: center; background-color: #e91e63">
+            <img src="https://us.123rf.com/450wm/olgastrelnikova/olgastrelnikova2009/olgastrelnikova200900002/155210504-vector-set-of-self-care-icons-love-relax-me-time-slow-life-concept-cute-girl-or-woman-hugging-hersel.jpg?ver=6"
+                style="float: right; height: 400px; width: 500px; transform: translate(-100px,50px);">
+            <div class="overlaytext" style="float: left; transform: translate(50px,160px);">
+                <h1 class="w3-margin" style="color: white;"><span id="title"
+                        style="font-size: 60px; font-weight: 600;">Self Care</span></h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- First Grid -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-twothird">
+                <h5 class="w3-padding-32">Whether you spend it on a hike, with your pet, or curled up with a good book,
+                    taking time to care for yourself will go a long way towards improving your mental health. It builds
+                    confidence, relieves stress, and lays a foundation for wellness. On July 24th, Self-Care Day, and
+                    everyday, Crisis Text Line wants you make time for what matters.</h5>
+                <a href="" style="text-decoration: none;">Explore more &#8594;</a>
+            </div>
+
+            <div class="w3-third w3-center">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIdbJ_DAsmmvRZoVBhS7TKVMLuLpgqGJtC4Oaff4y_mNcOGm-c&s">
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Grid -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-third w3-center">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQedMbZ7Mb8dPzS6-ymkoHBaitghy1B5LIRKURb-kRJROi4ztCJ&sc"
+                    style="height: 300px;width: 280px; margin-top: 50px; ">
+            </div>
+
+            <div class="w3-twothird">
+
+                <h5 class="w3-padding-32">For the lion's share of individuals with a inveterate ailment, time went
+                    through having that sickness overseen by a wellbeing proficient is unfathomably exceeded by time
+                    went through in self-care. It has been evaluated that most individuals with a unremitting ailment
+                    spend as it were approximately 0.001% or 10 hours per year of their time with a healthcare
+                    provider.Benefits of schedule self-care in for the most part solid populaces incorporate avoidance
+                    of ailment and comparatively superior quality of life. In individuals with incessant sickness,
+                    self-care is related with less indications, less hospitalizations, superior quality of life, and
+                    longer survival compared to people in whom self-care is poor.Self-care is seen as a halfway
+                    arrangement to the worldwide rise in wellbeing care costs that's set on governments around the
+                    world.
+                </h5>
+                <a href="https://youtu.be/w0iVTQS8ftg" style="text-decoration: none;">Explore more &#8594;</a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Third blog -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-twothird">
+                <h5 class="w3-padding-32"><span style="color: red;">❤</span> Caring for myself is not self-indulgence,
+                    it is self-preservation, and that is an act of political warfare.<br>
+                    <span style="color: red;">❤</span> Knowing how to be solitary is central to the art of loving. <br>
+                    <span style="color: red;">❤</span> If you celebrate your differentness, the world will, too.<br>
+                    <span style="color: red;">❤</span> Wildflower; pick up your pretty little head <br>
+                    <span style="color: red;">❤</span> I lied and said I was busy.
+                </h5>
+            </div>
+
+            <div class="w3-third w3-center">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT92x-xvQ9KTKcUkCZIsRvGhZKfykC9AYBgyz5kHICDVeVkKzw&s"
+                    style="height: 220px;width: 240px; margin-top: auto; margin-bottom: auto;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Fourth Blog -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-third w3-center">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0ZKcoHOx8ZvX4LCSmmrIOVa9zvkBs92bmYIAeRgAU-hqnVpQ&s">
+            </div>
+
+            <div class="w3-twothird">
+                <h1>Measurement of self-care behaviors</h1>
+                <h5 class="w3-padding-32">A variety of self-report instruments have been developed to allow clinicians
+                    and researchers to measure the level of self-care in different situations for both patients and
+                    their caregivers: These instruments are freely available in numerous languages. Many of these
+                    instruments have a caregiver version available to encourage dyadic research.</h5>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Fifth blog -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-twothird">
+                <h1>Inventory</h1>
+
+                <h5><span style="color: red;">❤</span>Self-Care Heart Failure Index<br></h5>
+                <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7179813/" style="text-decoration: none;">Click
+                    here to explore </a><br>
+                <h5><span style="color: red;">❤</span>Self-Care of Hypertension Inventory<br></h5>
+                <a href="https://journals.lww.com/jcnjournal/Abstract/2021/09000/Psychometric_Testing_of_the_Self_care_of.4.aspx"
+                    style="text-decoration: none;">Click here to explore </a><br>
+                <h5><span style="color: red;">❤</span>Self-Care of Diabetes Inventory<br></h5>
+                <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5644085/" style="text-decoration: none;">Click
+                    here to explore </a><br>
+                <h5><span style="color: red;">❤</span>Self-Care of Coronary Heart Disease Inventory<br></h5>
+                <a href="https://repository.upenn.edu/nrs/193/" style="text-decoration: none;">Click here to explore
+                </a><br>
+                <h5><span style="color: red;">❤</span>Self-Care of Chronic Illness Inventory<br></h5>
+                <a href="https://onlinelibrary.wiley.com/doi/10.1111/jan.13775" style="text-decoration: none;">Click
+                    here to explore </a><br>
+                <h5><span style="color: red;">❤</span>Self-care of Chronic Obstructive Pulmonary Disease<br></h5>
+                <a href="https://journals.sagepub.com/doi/10.1177/0163278719856660" style="text-decoration: none;">Click
+                    here to explore </a><br>
+                </h5>
+            </div>
+
+            <div class="w3-third w3-center">
+                <img src="https://i.pinimg.com/736x/90/e8/24/90e824020966292d9861ac3c627e4e79.jpg"
+                    style="height: 400px; width: 350px; margin-top: 22px;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Sixth Grid -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-third w3-center">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKCszvmbws76LmGTbOmsRCYXXly242MLACLultfcpYQTqsMns&s"
+                    style="height: 300px; width: 300px; padding-top: 40px;">
+            </div>
+
+            <div class="w3-twothird">
+
+                <h5 class="w3-padding-32">Schedule self-care is imperative for for the most part sound individuals but
+                    self-care gets to be fundamental when sickness occurs.Chronic ailment (e.g., heart disappointment,
+                    diabetes, tall blood weight) requires behaviors that control the ailment, diminish side effects, and
+                    progress survival such as medicine adherence and indication observing. An intense ailment like an
+                    disease (e.g., COVID) requires the same sorts of self-care behaviors required of individuals with a
+                    inveterate ailment, but the medicine adherence and indication observing behaviors related with an
+                    intense sickness are regularly brief lived. Schedule wellbeing support self-care behaviors that
+                    people lock in in (e.g., satisfactory rest) are still required of those managing with intense or
+                    persistent ailment. "wellbeing results of move work and deficiently sleep".
+                </h5>
+                <a href="https://youtu.be/bARpudRvNgA" style="text-decoration: none;">Explore more &#8594;</a>
+            </div>
+        </div>
+    </div>
+    <!-- Seventh Grid -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-twothird">
+                <h1 class="w3-padding-32">Best Self Care learning Courses:</h1>
+                <p style="color:blue">(Click to access the courses)</p>
+                <p style="font-size: large;"><a
+                        href="https://www.coursera.org/lecture/essentials-of-palliative-care/self-care-sVXwn"
+                        style="text-decoration: none;">&#8594; Essentials of palliative care</a><br>
+                    <a href="https://www.udemy.com/course/the-self-care-course-learning-how-to-take-good-care-of-you/"
+                        style="text-decoration: none;">&#8594; How to take good care of you</a><br>
+                    <a href="https://alison.com/course/setting-up-a-selfcare-list"
+                        style="text-decoration: none;">&#8594; Setting up a self care list</a><br>
+                    <a href="https://www.skillshare.com/browse/self-care-1" style="text-decoration: none;">&#8594;
+                        Skills of self care</a><br>
+                    <a href="https://www.edx.org/learn/self-care" style="text-decoration: none;">&#8594; Learn self
+                        care</a><br>
+                    <a href="https://www.classcentral.com/course/life101-48059" style="text-decoration: none;">&#8594;
+                        Class of life</a>
+                </p>
+            </div>
+
+            <div class="w3-third w3-center">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9LkCqHiC-_U24WuvVoy4jED9VYDQFu-UcZoWE6WQd6EVm4wr6&s"
+                    style="height: 400px; width: 380px;">
+            </div>
+        </div>
+    </div>
+    <!-- About Us -->
+    <div class="w3-container" id="contact"
+        style="margin-top:75px; padding-top: 30px; background-color: rgb(90, 89, 89);">
+        <div class="w3-row-padding w3-grayscale">
+            <div class="w3-col m4 w3-margin-bottom">
+                <div class="w3-light-grey">
+                    <div class="w3-container" style="color: white; background-color: rgb(90, 89, 89);">
+                        <h3>About Us</h3>
+                        <p class="w3-opacity">Indian Institute Of Information Technology, Allahabad<br>Road Devghat,
+                            Jhalwa, Prayagraj<br>Uttar Pradesh (211015)</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col m4 w3-margin-bottom">
+                <div class="w3-light-grey">
+                    <div class="w3-container" style="color: white; background-color: rgb(90, 89, 89);">
+                        <h3>Contribute</h3>
+                        <p class="w3-opacity"><i
+                                class="fa fa-envelope w3-hover-opacity"></i>&nbsp;tap2gauravsingh@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col m4 w3-margin-bottom">
+                <div class="w3-light-grey">
+                    <div class="w3-container" style="color: white; background-color: rgb(90, 89, 89);">
+                        <h3>Social</h3>
+                        <div class="w3-xlarge w3-padding-32">
+
+                            <a id="btun" href="https://www.facebook.com/profile.php?id=100073353016321"><i
+                                    class="fa fa-facebook-official w3-hover-opacity "></i></a> &nbsp;
+                            <a id="btun" href="https://www.instagram.com/gauravsingh._._._/"><i
+                                    class="fa fa-instagram w3-hover-opacity "></i></a> &nbsp;
+                            <a id="btun" href="https://twitter.com/GauravS00997828"><i
+                                    class="fa fa-twitter w3-hover-opacity "></i></a> &nbsp;
+                            <a id="btun" href="https://in.pinterest.com/tap2gauravsingh/_saved/"><i
+                                    class="fa fa-pinterest w3-hover-opacity "></i></a> &nbsp;
+                            <a id="btun" href="https://www.linkedin.com/in/codewithgauravsingh/"><i
+                                    class="fa fa-linkedin w3-hover-opacity "></i></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
